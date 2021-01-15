@@ -25,7 +25,7 @@ SECRET_KEY = 'bf15b3b=0)(nk1+swp4wc9*&jfv1!@0jiwq+@!94**5!z+m2(+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://photo-net-daniel.herokuapp.com/', '127.0.0.1']
+ALLOWED_HOSTS = ['photo-net-daniel.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
