@@ -1,0 +1,1 @@
+web: gunicorn PhotoNet.wsgi --log-file -
