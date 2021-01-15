@@ -54,7 +54,7 @@ ROOT_URLCONF = 'PhotoNet.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['redSocial/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'PhotoNet.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'djongo',
+        "name": 'examen',
+        "host": 'mongodb+srv://dosek:dosek@cluster0.up6fc.mongodb.net/examen?retryWrites=true&w=majority',
+        "username": 'dosek',
+        "password": 'dosek',
+        "authMechanism": "SCRAM-SHA-1",
     }
 }
 
